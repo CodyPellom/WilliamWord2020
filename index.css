@@ -1,0 +1,126 @@
+/*Fonts & Globals Start*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville';
+    color: rgb(1, 41, 1);
+}
+.hero-white {
+    font-size: 75px;
+    color: whitesmoke;
+    border: green 2px solid;
+}
+.sub-hero-white {
+    font-size: 35px;
+    color: whitesmoke;
+    margin-top: -50px;
+}
+
+.hero-black {
+    font-size: 75px;
+    color: black;
+    border: green 2px solid;
+}
+.sub-hero-black {
+    font-size: 35px;
+    color: black;
+    margin-top: -50px;
+}
+
+p,
+a {
+    font-family: 'Lato', sans-serif;
+    color: rgb(29, 29, 29);
+}
+.overview-text {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+/*Fonts & Globals End*/
+
+
+/* Navbar Section Start*/
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    border: solid 2px rgb(0, 41, 0);
+}
+
+
+
+#logo {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+
+}
+
+.navbar-link-section {
+    position: absolute;
+    margin-top: 50px;
+    right: 0;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.link:hover {
+    transition: color 0.25s;
+    color: green;
+}
+
+/*Navbar Section End*/
+
+/*Hero Section Starts*/
+.hero-section-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/IMG_0471.JPG');
+    background-repeat: none;
+    background-size: cover;  
+}
+
+
+/*Hero Section Ends*/
+
+/*About Section Starts*/
+.about-section {
+    width: 100%;
+    height: 100vh;
+}
+#about-video {
+    height: 55%;
+
+}
+/*About Section Ends*/
