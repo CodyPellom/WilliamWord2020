@@ -5,10 +5,10 @@ $(function(){
     menuButtonCounter++;
     if (menuButtonCounter % 2 == 0){
         $('.navbar-container').css('height', '75px');
-        $('.navbar-link-section').css('opacity','100%');
+        $('.navbar-link-section').css('display','block');
     } else {
         $('.navbar-container').css('height', '50px');
-        $('.navbar-link-section').css('opacity','0%');
+        $('.navbar-link-section').css('display','none');
 
     }
     })
