@@ -12,9 +12,10 @@ h6 {
     color: rgb(1, 41, 1);
 }
 
+
 ul {
-    list-style: none;
-    font-size: 24px;
+
+    font-size: 18px;
     text-align: center;
     display: block;
     text-align: left;
@@ -35,7 +36,7 @@ ul {
 }
 
 .hero-black {
-    font-size: 65px;
+    font-size: 40px;
     color: black;
     text-align: center;
 }
@@ -54,12 +55,15 @@ a {
 }
 
 .overview-text {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 15%;
+    padding-right: 15%;
     font-size: 24px;
     text-align: center;
     margin-top: -15px;
+}
 
+.overview-text-bottom {
+    margin-bottom: 50px;
 }
 
 .column {
@@ -122,8 +126,6 @@ a {
 
 .navbar-link-section {
     position: absolute;
-    
-    
 }
 
 .link {
@@ -155,7 +157,12 @@ a {
 /*About Section Starts*/
 .about-section {
     width: 100%;
-    height: 150vh;
+
+    margin-bottom: 25px;
+}
+
+.about-section .overview-text {
+    margin-bottom: 25px;
 }
 
 #about-video {
@@ -163,6 +170,32 @@ a {
 }
 
 /*About Section Ends*/
+
+/*Testimonial Section*/
+
+.testimonial-section {}
+
+.testimonial-section ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+.testimonial-section .overview-text {}
+
+.testimonial {
+    margin-bottom: 25px;
+}
+
+.testimonial .overview-text {
+    margin-bottom: 25px;
+}
+
+.testimonial ul {
+    margin-top: 25px;
+}
 
 #wwMainLogoPic {
     margin-top: -200px;
@@ -200,7 +233,6 @@ a {
     height: 50px;
 }
 
-.footer-link-section {}
 
 .f-description-text {
     font-size: 16px;
@@ -210,11 +242,60 @@ a {
 
 /*Footer Section Ends*/
 
+/*Company Overview Section Starts*/
+.company-overview-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: gainsboro;
+        padding-bottom: 25px;
+    }
+.company-overview-section h3 {
+    font-size: 30px;
+}
+.company-overview-symbols-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+}
+.co-item {
+    height: 200px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.co-item h6 {
+    max-width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.co-item img {
+    width: 75px;
+    height: 75px;
+    margin-top: -25px;
+}
+.co-item p {
+    max-width: 200px;
+    text-align: center;
+    font-size: 12px;
+    
+}
+/*Company Overview Section Ends*/
 
 /*Media Queries Start*/
 @media (max-width: 757px) {
     .announcement-bar-section {
-        height: 40px;
+        height: 50px;
     }
 
     #announcement {
@@ -223,39 +304,21 @@ a {
     }
 
     .navbar-container {
-        height: 50px;
+        height: 25px;
         transition: all 0.25s;
         overflow: hidden;
         width: 100%;
-        }
-
-
-    #menu-button {
-        display: block;
-        position: absolute;
-        height: 40px;
-        width: 40px;
-        margin-top: 5px;
-        right: 0;
-        margin-right: 10px;
-
     }
-
 
     #logo {
         width: 50px;
         height: 50px;
     }
 
-     .navbar-link-section   {
-        right: unset;
-        margin-top: 50px;
-      
-    }
 
     .link {
         font-size: 14px;
-     
+
     }
 
     .hero-white {
@@ -281,31 +344,48 @@ a {
     .overview-text {
         font-size: 16px;
     }
+
     .about-section {
         width: 100%;
-        height: 75vh;
     }
 
     #about-video {
         max-width: 75%;
     }
 
-    
-#wwMainLogoPic {
-    margin-top: -400px;
-    width: 300px;
-    height: 200px;
+
+    #wwMainLogoPic {
+        margin-top: -400px;
+        width: 300px;
+        height: 200px;
+    }
+
+
+
+    .contact-section {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 100px;
+    }
+
+    .company-overview-symbols-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+}
+.company-overview-section {
+    padding-bottom: 0px;
 }
 
-
-
-.contact-section {
-    width: 100%;
-    height: 50vh;
-    margin-bottom: 100px;    
+.co-item {
+    height: 150px;
 }
-
-
+.co-item h6 {
+    display: none;
+}
 
     /*Footer Section Starts*/
 
@@ -332,10 +412,13 @@ a {
     /*Footer Section Ends*/
 
 
+    #cell {
+        display: none;
+
+    }
+
 }
 
-@media (max-width: 200px) {
-    
-}
+@media (max-width: 200px) {}
 
 /*Media Queries End*/
