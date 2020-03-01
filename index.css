@@ -50,20 +50,25 @@ ul {
 
 p,
 a {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Libre Baskerville', sans-serif;
     color: rgb(29, 29, 29);
+}
+
+p {
+    font-size: 16px;
 }
 
 .overview-text {
     padding-left: 15%;
     padding-right: 15%;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     margin-top: -15px;
 }
 
 .overview-text-bottom {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .column {
@@ -91,8 +96,8 @@ a {
 
 .announcement-bar-section {
     width: 100%;
-    height: 80px;
-    border: solid 3px rgb(119, 119, 119);
+    height: 150px;
+    border: solid 1px rgb(119, 119, 119);
     background-color: gainsboro;
 }
 
@@ -104,18 +109,16 @@ a {
 
 .navbar-container {
     width: 100%;
-    height: 40px;
-    border: solid 3px rgb(119, 119, 119);
-
+    height: 24px;
+    border: solid 1px rgb(119, 119, 119);
     background-color: gainsboro;
 }
-
-
 
 #logo {
     width: 75px;
     height: 75px;
     position: absolute;
+    margin-left: 5px;
 
 }
 
@@ -124,14 +127,10 @@ a {
 }
 
 
-.navbar-link-section {
-    position: absolute;
-}
-
 .link {
     text-decoration: none;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -180,7 +179,6 @@ a {
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
-
 }
 
 .testimonial-section .overview-text {}
@@ -206,8 +204,7 @@ a {
 .contact-section {
     width: 100%;
     height: 50vh;
-    margin-top: 120px;
-    margin-bottom: 120px;
+
 }
 
 #cell {
@@ -224,8 +221,9 @@ a {
 
 .footer-section {
     width: 100%;
-    height: 50px;
+    height: 110px;
     background-color: rgb(102, 101, 101);
+    bottom:0;
 }
 
 .footer-logo {
@@ -240,62 +238,80 @@ a {
     color: white;
 }
 
+#cc {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    margin-top: 50px;
+}
+
+
 /*Footer Section Ends*/
 
 /*Company Overview Section Starts*/
 .company-overview-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        background-color: gainsboro;
-        padding-bottom: 25px;
-    }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: gainsboro;
+    padding-bottom: 100px;
+}
+
 .company-overview-section h3 {
     font-size: 30px;
 }
+
 .company-overview-symbols-section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    
 }
+
 .co-item {
-    height: 200px;
-    width: 150px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin: 50px;
 }
+
 .co-item h6 {
     max-width: 200px;
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
 }
+
+
+
 .co-item img {
     width: 75px;
     height: 75px;
     margin-top: -25px;
 }
+
 .co-item p {
-    max-width: 200px;
+    max-width: 150px;
     text-align: center;
-    font-size: 12px;
-    
+    font-size: 18px;
+
 }
+
 /*Company Overview Section Ends*/
 
 /*Media Queries Start*/
 @media (max-width: 757px) {
     .announcement-bar-section {
-        height: 50px;
+        height: 100px;
     }
 
     #announcement {
@@ -305,20 +321,24 @@ a {
 
     .navbar-container {
         height: 25px;
-        transition: all 0.25s;
-        overflow: hidden;
         width: 100%;
     }
 
     #logo {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
 
     .link {
-        font-size: 14px;
+        font-size: 12px;
 
+    }
+    .hero-section-container {
+        height: 75vh;
+        position: relative;
+        z-index: 0;
+    
     }
 
     .hero-white {
@@ -365,7 +385,7 @@ a {
     .contact-section {
         width: 100%;
         height: 50vh;
-        margin-bottom: 100px;
+
     }
 
     .company-overview-symbols-section {
@@ -375,37 +395,54 @@ a {
         justify-content: center;
         align-items: stretch;
         align-content: center;
-}
-.company-overview-section {
-    padding-bottom: 0px;
-}
+    }
 
-.co-item {
-    height: 150px;
-}
-.co-item h6 {
-    display: none;
-}
+    .company-overview-section {
+        padding-bottom: 0px;
+    }
+
+    .co-item {
+        height: 200px;
+        margin: 0px;
+
+    }
+
+    .co-item h6 {
+        display: none;
+    }
+
+    .testimonial-section ul {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
     /*Footer Section Starts*/
 
     .footer-section {
         width: 100%;
-        height: 50px;
-        background-color: rgb(75, 75, 75);
+        height: 80px;
+        background-color: rgb(185, 185, 185);
+        bottom: 0;
     }
 
     .footer-logo {
         width: 40px;
-        height: 50px;
+        height: 40px;
         left: 0;
+    }
+    #cc {
+     margin-top: 40px;   
+        width: 200px;
+        height: 40px;
+        position: absolute;
     }
 
     .footer-link-section {}
 
     .f-description-text {
-        font-size: 16px;
+        font-size: 12px;
         position: absolute;
+        color: green;
 
     }
 
@@ -419,6 +456,5 @@ a {
 
 }
 
-@media (max-width: 200px) {}
 
 /*Media Queries End*/
